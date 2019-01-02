@@ -1,0 +1,55 @@
+\documentclass[10pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russia]{babel}
+\usepackage[left=25mm, top=20mm, right=10mm, bottom=10mm, nohead, nofoot]{geometry}
+\usepackage{xcolor}
+\title{Преамбула}
+\author{Студент гр.8871 Штук А.К.}
+\begin{document}
+\maketitle
+\begin{center}
+    \LARGE{documentclass}
+\end{center}
+\begin{center}
+    {Стиль}
+\end{center}
+\begin{enumerate}
+\item \textcolor{blue}{article}-для подготовки научных статей, презентаций, коротких сообщений, программной документации
+\item \textcolor{blue}{proc} основан на классе article для подготовки материалов конференций
+\item \textcolor{blue}{minimal} имеет минимальный набор возможностей, таких как, размер страницы и размер шрифта 
+\item \textcolor{blue}{eport} поддерживает главы и может использоваться для небольших книг, диссертаций
+\item \textcolor{blue}{book} для подготовки книг
+\item \textcolor{blue}{slides} для слайдов; стоит отметить, что если вы собираетесь подготовить презентацию в LaTeX, то обратите внимание на более функциональный класс Beamer.
+\item \textcolor{red}{eskdx} — реализация стандарта ЕСКД от Константина Корикова. Основу коллекции составляют классы: eskdtext (для текстовой документации), eskdbtab (для чертежей и схем) и eskdgraph (для документов, разбитых на графы). 
+\end{enumerate}
+\begin{center}
+   {Коментарий}
+\end{center}
+\begin{enumerate}
+\item \textcolor{red}{10pt, 11pt, 12pt} устанавливают размер основного шрифта
+\item \textcolor{red}{a4paper, letterpaper, a5paper, b5paper, executivepaper, legalpaper} — размер страницы 
+\item \textcolor{blue}{draft} включает режим черновика, отмечая в скомпилированном документе проблемные места 
+\item \textcolor{blue}{fleqn} устанавливает выравнивание формул по левому краю вместо центрирования по умолчанию 
+\item \textcolor{blue}{leqno} размещает номера формул слева от формулы, а не справа
+\item \textcolor{blue}{titlepage, notitlepage} указывает создавать или нет титульную страницу; по умолчанию класс 
+\item \textcolor{blue}{onecolumn, twocolumn} определяет форматирование текста в одну или две колонки
+\item \textcolor{blue}{twoside, oneside} определяет форматирование для двух или односторонней печати 
+\item \textcolor{blue}{landscape меняет} ориентацию страницы с портретной на ландшафтную
+\end{enumerate}
+\begin{center}
+    \LARGE{usepackage}
+\end{center}
+\begin{center}
+    {Интернационализация и локализация}
+\end{center}
+\begin{enumerate}
+\item \textcolor{red}{fontenc} — стандартный стиль для выбора внутренней кодировки LaTeX. Для русского надо указывать кодировку \underline{T2A}.
+\item \textcolor{red}{inputenc} — стандартный стиль для указания, в какой кодировке набран текст.Кодировка \underline{cp1251} применяется в Windows-системах. Русифицированая кодировка \underline{utf8}
+\item \textcolor{red}{babel} — стандартный пакет локализации или выбора языка документа LaTeX. 
+\end{enumerate}
+\begin{center}
+    Графика
+\end{center}
+
+\end{document}
