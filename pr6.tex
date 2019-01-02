@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel} 
+\usepackage[european,cuteinductors,smartlabels]{circuitikz}
+\usepackage{mathtext}                    
+\usepackage{tikz}
+\title{Практическая работа №6}
+\author{Штук А.К.}
+
+\begin{document}
+\maketitle
+\begin{center}
+    Вариант №2
+        \end{center}
+
+\begin{circuitikz}
+\begin{scope}[xscale=0.7,yscale=0.7]
+
+\draw (0,0) to[short,o-*] (3,0);
+\draw (3,0) to[C, l_={$C1$},*-*] (3,-8);
+\draw (3,-8) to[short,*-o] (0,-8);
+
+\draw (3,0) to[short,*-*] (6,0);
+\draw (3,-8) to[short,*-*] (6,-8);
+\draw (6,-1.2) node[npn] (npn) {};
+\draw (6,-6.8) node[npn] (npn) {};
+\draw (6,-2.4) -- (6,-5.6);
+\draw (6,-3) to[short,*-] (14,-3);
+\draw (14,-3) to[short,-*] (14,-2);
+\draw (14,-2) to[L, l={$L1$},*-*] (18,-2);
+\draw (18,-2) -- (18,-4);
+
+\draw (6,0) to[short,*-*] (9,0);
+\draw (6,-8) to[short,*-*] (9,-8);
+\draw (9,-1.2) node[npn] (npn) {};
+\draw (9,-6.8) node[npn] (npn) {};
+\draw (9,-2.4) -- (9,-5.6);
+\draw (9,-4) to[short,*-*] (14,-4);
+\draw (14,-4) to[L, l={$L2$},*-*] (18,-4);
+
+\draw (9,0) to[short,*-*] (12,0);
+\draw (9,-8) to[short,*-*] (12,-8);
+\draw (12,-1.2) node[npn] (npn) {};
+\draw (12,-6.8) node[npn] (npn) {};
+\draw (12,-2.4) -- (12,-5.6);
+\draw (12,-5) to[short,*-] (14,-5);
+\draw (14,-5) to[short,-*] (14,-6);
+\draw (14,-6) to[L, l={$L3$},*-*] (18,-6);
+\draw (18,-6) -- (18,-4);
+
+\end{scope}
+\end{circuitikz}
+\end{document}
