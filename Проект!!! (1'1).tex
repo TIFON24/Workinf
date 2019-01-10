@@ -1,0 +1,31 @@
+\documentclass[border=11pt,a4paper]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{tikz}
+\author{Штук А.К.}
+\title{Проект(1:1)}
+\begin{document}
+\centering
+
+\LARGE{$\alpha(x)=-\pi/2$\quad $\beta(y)=0$\quad $\gamma(z)=-\pi/6$}
+
+\begin{tikzpicture}[scale=1]
+\draw (0,0,0) -- (10.5,0,-18.1865) node[above,right]{h2};
+\draw (10.5,0,-18.1865) -- (31.7176,0,-5.9365) node[below]{h3};
+\draw (31.7176,0,-5.9365) -- (21.2176,0,12.25) node[below]{h4};
+\draw (21.2176,0,12.25) -- (0,0,0) node[below]{h1};
+
+\draw (0,0,0) -- (0,5,0) node[left]{h5};
+\draw (0,5,0) -- (10.5,5,-18.1865) node[right]{h6};
+\draw (10.5,5,-18.1865) -- (10.5,0,-18.1865);
+
+\fill[gray!30!white, draw=black] (0,0,0) -- (10.5,0,-18.1865) -- (31.7176,0,-5.9365) -- (21.2176,0,12.25) -- (0,0,0);
+\fill[gray!30!white, draw=black] (0,0,0) -- (0,5,0) -- (10.5,5,-18.1865) -- (10.5,0,-18.1865);
+
+\path (2.5981,0,1.5) node{$x$}
+        (1.5,0,-2.5981) node{$y$}
+        (0,3,0) node{$z$};
+        
+\end{tikzpicture}
+\end{document}

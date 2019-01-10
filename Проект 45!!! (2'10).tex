@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tikz}
+\author{Штук А.К.}
+\title{Проект(2:10)}
+\begin{document}
+\maketitle
+\centering
+
+\begin{tabular}{c|c}
+$\alpha(x)=0$\quad $\beta(y)=0$\quad $\gamma(z)=0$ & $\alpha(x)=-\pi/3$\quad $\beta(y)=0$\quad $\gamma(z)=0$\\
+\begin{tikzpicture}[scale=0.2]
+
+\draw (0,0,0) -- (0,21,0) node[below]{h2};
+\draw (0,21,0) -- (24.5,21,0) node[below]{h3};
+\draw (24.5,21,0) -- (24.5,0,0) node[below]{h4};
+\draw (24.5,0,0) -- (0,0,0) node[below]{h1};
+
+\draw (0,0,0) -- (0,0,5) node[below]{h5};
+\draw (0,0,5) -- (0,21,5) node[below]{h6};
+\draw (0,21,5) -- (0,21,0);
+
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.2]
+
+\draw (0,0,0) -- (0,10.5,-18.1865) node[below]{h2};
+\draw (0,10.5,-18.1865) -- (24.5,10.5,-18.1865) node[below]{h3};
+\draw (24.5,10.5,-18.1865) -- (24.5,0,0) node[below]{h4};
+\draw (24.5,0,0) -- (0,0,0) node[below]{h1};
+
+\draw (0,0,0) -- (0,4.3301,2.5) node[below]{h5};
+\draw (0,4.3301,2.5) -- (0,14.8301,-15.6865) node[below]{h6};
+\draw (0,14.8301,-15.6865) -- (0,10.5,-18.1865);
+
+\end{tikzpicture}\\
+\hline
+$\alpha(x)=-\pi/3$\quad $\beta(y)=\pi/3$\quad $\gamma(z)=0$ & $\alpha(x)=-\pi/3$\quad $\beta(y)=\pi/3$\quad $\gamma(z)=-\pi/2$\\
+
+\begin{tikzpicture}[scale=0.2]
+
+\draw (0,0,0) -- (0,10.5,-18.1865) node[below]{h2};
+\draw (0,10.5,-18.1865) -- (12.25,-7.875,-28.7953) node[below]{h3};
+\draw (12.25,-7.875,-28.7953) -- (12.25,-18.375,-10.6088) node[below]{h4};
+\draw (12.25,-18.375,-10.6088) -- (0,0,0) node[below]{h1};
+
+\draw (0,0,0) -- (4.3301,2.1651,1.25) node[below]{h5};
+\draw (4.3301,2.1651,1.25) -- (4.3301,12.6651,-16.9365) node[below]{h6};
+\draw (4.3301,12.6651,-16.9365) -- (0,10.5,-18.1865);
+
+\end{tikzpicture}
+&
+
+\begin{tikzpicture}[scale=0.2]
+
+\draw (0,0,0) -- (10.5,-15.75,-9.0933) node[below]{h2};
+\draw (10.5,-15.75,-9.0933) -- (10.5,-28,12.1244) node[below]{h3};
+\draw (10.5,-28,12.1244) -- (0,-12.25,21.2176) node[below]{h4};
+\draw (0,-12.25,21.2176) -- (0,0,0) node[below]{h1};
+
+\draw (0,0,0) -- (4.3301,2.1651,1.25) node[below]{h5};
+\draw (4.3301,2.1651,1.25) -- (14.8301,-13.5849,-7.8433) node[below]{h6};
+\draw (14.8301,-13.5849,-7.8433) -- (10.5,-15.75,-9.0933);
+
+\path (0,-1.5,2.5981) node{$x$}
+        (1.5,-2.25,-1.299) node{$y$}
+        (2.5981,1.299,0.75) node{$z$};
+
+\end{tikzpicture}
+\end{tabular}
+\end{document}
