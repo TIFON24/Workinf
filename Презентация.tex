@@ -1,0 +1,77 @@
+\documentclass{beamer}
+\usepackage[english,russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+% Стиль презентации
+\usetheme{Warsaw}
+\begin{document}
+\title{Информатика Поворот модели в Latex}  
+\author{Штук А.К.}
+\institute{ЛЭТИ}
+\date{СПБ, 2018} 
+% Создание заглавной страницы
+\frame{\titlepage} 
+\begin{frame}{Исходное состояние фигуры}
+    \begin{tikzpicture}[scale=0.3]
+
+\draw (0,0,0) -- (0,21,0) node[below]{h2};
+\draw (0,21,0) -- (24.5,21,0) node[below]{h3};
+\draw (24.5,21,0) -- (24.5,0,0) node[below]{h4};
+\draw (24.5,0,0) -- (0,0,0) node[below]{h1};
+
+\draw (0,0,0) -- (0,0,5) node[below]{h5};
+\draw (0,0,5) -- (0,21,5) node[below]{h6};
+\draw (0,21,5) -- (0,21,0);
+
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Поворот x=-90^\circ и z=-30^\circ}
+{$\alpha(x)=-\pi/2$\quad $\beta(y)=0$\quad $\gamma(z)=-\pi/6$}
+
+\begin{tikzpicture}[scale=0.3]
+
+\fill[gray!30!white, draw=black] (-4.8301,-0.1,-1.634) -- (8.6699,-0.1,-25.0167) -- (38.5477,-0.1,-7.7667) -- (25.0477,-0.1,15.616);
+
+\fill[red!30!white, draw=black] (0,0,0) -- (10.5,0,-18.1865) -- (31.7176,0,-5.9365) -- (21.2176,0,12.25) -- (0,0,0);
+\fill[blue!30!white, draw=black] (0,0,0) -- (0,5,0) -- (10.5,5,-18.1865) -- (10.5,0,-18.1865);
+\path (2.5981,0,1.5) node{$x$}
+        (1.5,0,-2.5981) node{$y$}
+        (0,3,0) node{$z$};
+        
+\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}{Поворот z=-15^\circ}
+{$\alpha(x)=-\pi/2$\quad $\beta(y)=0$\quad $\gamma(z)=-\pi/4$}
+
+\begin{tikzpicture}[scale=0.3]
+
+\fill[gray!30!white, draw=black] (-4.8301,-0.1,-1.634) -- (8.6699,-0.1,-25.0167) -- (38.5477,-0.1,-7.7667) -- (25.0477,-0.1,15.616);
+
+\fill[red!30!white, draw=black] (0,0,0) -- (14.8492,0,-14.8492) -- (32.1734,0,2.4749) -- (17.3241,0,17.3241) -- (0,0,0);
+\fill[blue!30!white, draw=black] (0,0,0) -- (0,5,0) -- (14.8492,5,-14.8492) -- (14.8492,0,-14.8492);
+\path (2.1213,0,2.1213) node{$x$}
+        (2.1213,0,-2.1213) node{$y$}
+        (0,3,0) node{$z$};
+        
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Поворот z=+5^\circ}
+{$\alpha(x)=-\pi/2$\quad $\beta(y)=0$\quad $\gamma(z)=-\pi/4$}
+
+\begin{tikzpicture}[scale=0.3]
+
+\fill[gray!30!white, draw=black] (-4.8301,-0.1,-1.634) -- (8.6699,-0.1,-25.0167) -- (38.5477,-0.1,-7.7667) -- (25.0477,-0.1,15.616);
+
+\fill[red!30!white, draw=black] (0,0,0) -- (13.498,0,-16.0874) -- (32.2666,0,-0.3397) -- (18.7686,0,15.7477) -- (0,0,0);
+\fill[blue!30!white, draw=black] (0,0,0) -- (0,5,0) -- (13.498,5,-16.0874) -- (13.498,0,-16.0874);
+\path (2.2982,0,1.9283) node{$x$}
+        (1.9283,0,-2.2982) node{$y$}
+        (0,3,0) node{$z$};
+        
+\end{tikzpicture}
+\end{frame}
+\end{document}
